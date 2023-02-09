@@ -11,16 +11,20 @@ function Todo ({todos, completeTodo,removeTodo, updateTodo})  {
         value: ''
     })
 
+    
     const submitUpdate = value => {
       updateTodo(edit.id, value);
       setEdit({
         id: null,
-        value: ''
+        value:   ''
       });
     };
   
     if (edit.id) {
-      return <TodoForm edit={edit} onSubmit={submitUpdate} />;
+      return <TodoForm 
+      edit={edit} 
+      onSubmit={submitUpdate} 
+      />;
     }
 
   return (
@@ -36,7 +40,7 @@ function Todo ({todos, completeTodo,removeTodo, updateTodo})  {
             <AiFillDelete 
             onClick={() => removeTodo((todo.id))}  className='delete-icon'/>
             <AiFillEdit
-            onClick={() => setEdit({id: todo.id,value: todo.text} )}  className='edit-icon'/>
+            onClick={() => setEdit({id: todo.id, value: todo.text} )}  className='edit-icon'/>
          </div>
     </div>
   ))

@@ -9,8 +9,8 @@
   body {
     background: linear-gradient(
       90deg,
-      rgba(48, 16, 255, 1) 0%,
-      rgba(100, 115, 255, 1) 100%
+      rgb(110, 8, 199) 0%,
+      rgb(51, 1, 91) 100%
     );
   }
   .todo-app {
@@ -45,7 +45,7 @@
     
     padding: 14px 32px 14px 16px;
     border-radius: 4px 0 0 4px;
-    border: 2px solid #5d0cff;
+    border: 2px solid rgba(105, 93, 130, 0.48) ;
     outline: none;
     width: 320px;
     background: transparent;
@@ -65,25 +65,28 @@
     outline: none;
     background: linear-gradient(
       90deg,
-      rgba(93, 12, 255, 1) 0%,
-      rgba(155, 0, 250, 1) 100%
+      rgba(99, 83, 131, 0.48) 0%,
+      rgba(92, 66, 108, 0.23) 100%
     );
     color: #fff;
     text-transform: capitalize;
+    transition: 1sec ;
   }
-  
+
+  .todo-button:hover{
+    opacity: 0.8;
+  }
   .todo-input.edit {
    
-    border: 2px solid #149fff;
+    border: 2px solid rgba(105, 93, 130, 0.48) ;
   }
   
   .todo-button.edit {
     background: linear-gradient(
       90deg,
-      rgba(20, 159, 255, 1) 0%,
-      rgba(17, 122, 255, 1) 100%
-    );
-    padding: 16px 22px;
+      rgba(99, 83, 131, 0.48) 0%,
+      rgba(92, 66, 108, 0.23) 100%
+    )
   }
   
   .todo-container {
@@ -98,46 +101,22 @@
     align-items: center;
     margin: 4px auto;
     color: #fff;
-    background: linear-gradient(
-      90deg,
-      rgba(255, 118, 20, 1) 0%,
-      rgba(255, 84, 17, 1) 100%
-    );
+    
   
     padding: 16px;
     border-radius: 5px;
     width: 90%;
-  }
-  
-  .todo-row:nth-child(4n + 1) {
-    background: linear-gradient(
-      90deg,
-      rgba(93, 12, 255, 1) 0%,
-      rgba(155, 0, 250, 1) 100%
-    );
-  }
-  
-  .todo-row:nth-child(4n + 2) {
-    background: linear-gradient(
-      90deg,
-      rgba(255, 12, 241, 1) 0%,
-      rgba(250, 0, 135, 1) 100%
-    );
-  }
-  
-  .todo-row:nth-child(4n + 3) {
-    background: linear-gradient(
-      90deg,
-      rgba(20, 159, 255, 1) 0%,
-      rgba(17, 122, 255, 1) 100%
-    );
-   
-  }
-
-  .todo-row {
     margin: auto;
     margin-bottom: 10px;
+    background: linear-gradient(
+      90deg,
+      rgba(99, 83, 131, 0.48) 0%,
+      rgba(92, 66, 108, 0.23) 100%
+      /* rgba(115, 111, 122, 0.48) 0%,
+      rgba(225, 208, 236, 0.23) 100% */
+    )
   }
+  
   
   .icons {
     display: flex;

@@ -7,19 +7,21 @@
   }
   
   body {
-    background: linear-gradient(
-      90deg,
-      rgb(110, 8, 199) 0%,
-      rgb(51, 1, 91) 100%
-    );
+    margin: 0;
+    background: linear-gradient(90deg,#2C3E50,
+    #000000);
+    min-height: 500px;
+    
   }
+  
+
   .todo-app {
     display: flex;
     flex-direction: column;
     justify-content: start;
     width: 520px;
     min-height: 600px;
-    background: #161a2b;
+    background: #404973;
     text-align: center;
     margin: 128px auto;
     border-radius: 10px;
@@ -45,7 +47,7 @@
     
     padding: 14px 32px 14px 16px;
     border-radius: 4px 0 0 4px;
-    border: 2px solid rgba(105, 93, 130, 0.48) ;
+    border: 2px solid rgba(99, 83, 131, 0.48) ;
     outline: none;
     width: 320px;
     background: transparent;
@@ -63,11 +65,9 @@
     border-radius: 0 4px 4px 0;
     cursor: pointer;
     outline: none;
-    background: linear-gradient(
-      90deg,
-      rgba(99, 83, 131, 0.48) 0%,
-      rgba(92, 66, 108, 0.23) 100%
-    );
+    background: linear-gradient(90deg,
+    rgba(99, 83, 131, 0.48) 0%,
+    rgba(30, 27, 34, 0.23) 100%);
     color: #fff;
     text-transform: capitalize;
     transition: 1sec ;
@@ -108,13 +108,10 @@
     width: 90%;
     margin: auto;
     margin-bottom: 10px;
-    background: linear-gradient(
-      90deg,
-      rgba(99, 83, 131, 0.48) 0%,
-      rgba(92, 66, 108, 0.23) 100%
+    background: linear-gradient(69.9deg, rgb(76, 79, 106) 3.2%, rgb(17, 20, 35) 97.6%);
       /* rgba(115, 111, 122, 0.48) 0%,
       rgba(225, 208, 236, 0.23) 100% */
-    )
+    
   }
   
   
@@ -149,7 +146,7 @@
   
   .todo-body{
     
-    background-color: #0000005b;
+    background-color: #05051c32;
     margin: auto;
     border-radius: 20px;
     min-height: 400px;

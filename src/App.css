@@ -30,7 +30,7 @@
   
   h1 {
     margin: 32px 0;
-    color: #fff;
+    color: #ffffffe7;
     font-size: 24px;
   }
   
@@ -47,11 +47,11 @@
     
     padding: 14px 32px 14px 16px;
     border-radius: 4px 0 0 4px;
-    border: 2px solid rgba(99, 83, 131, 0.48) ;
+    border: 2px solid rgba(116, 115, 118, 0.48) ;
     outline: none;
     width: 320px;
     background: transparent;
-    color: #fff;
+    color: #ffffff;
     
   }
   
@@ -66,9 +66,9 @@
     cursor: pointer;
     outline: none;
     background: linear-gradient(90deg,
-    rgba(99, 83, 131, 0.48) 0%,
-    rgba(30, 27, 34, 0.23) 100%);
-    color: #fff;
+    rgba(114, 109, 125, 0.48) 0%,
+    rgba(32, 30, 36, 0.447) 100%);
+    color: #ffffff;
     text-transform: capitalize;
     transition: 1sec ;
   }
@@ -108,7 +108,8 @@
     width: 90%;
     margin: auto;
     margin-bottom: 10px;
-    background: linear-gradient(69.9deg, rgb(76, 79, 106) 3.2%, rgb(17, 20, 35) 97.6%);
+    background: linear-gradient(69.9deg,rgba(137, 136, 140, 0.271) 0%,
+    rgba(70, 66, 77, 0.208) 100%);
       /* rgba(115, 111, 122, 0.48) 0%,
       rgba(225, 208, 236, 0.23) 100% */
     
@@ -126,9 +127,15 @@
     margin-right: 5px;
     color: #fff;
   }
+  .delete-icon:hover {
+    opacity: 0.7;
+  }
   
   .edit-icon {
     color: #fff;
+  }
+  .edit-icon:hover {
+    opacity: 0.7;
   }
 
   .top {
@@ -146,7 +153,7 @@
   
   .todo-body{
     
-    background-color: #05051c32;
+    background-color: #00000072;
     margin: auto;
     border-radius: 20px;
     min-height: 400px;
